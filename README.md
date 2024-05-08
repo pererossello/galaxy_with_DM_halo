@@ -1,5 +1,7 @@
 # Simple N-body Galaxy in NFW DM Halo 
 
+![Example](example_simulation.gif)
+
 Python program for N-body simulation of a galaxy inside a Navarro-Frenk-White potential. 
 
 ## Usage

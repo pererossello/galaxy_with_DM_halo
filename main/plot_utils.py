@@ -171,7 +171,6 @@ def make_animation(
     delete_frames=False,
     reverse=False,
     N_max=None,
-    format="mp4",
 ):
 
     if isinstance(lim, (float, int)):
@@ -267,10 +266,7 @@ def make_animation(
 
     time_start = time.time()
 
-    if format == "gif":
-        png_to_gif(savefold, fps=fps, reverse=reverse)
-    else:
-        png_to_mp4(savefold, fps=fps, reverse=reverse)
+    png_to_mp4(savefold, fps=fps, reverse=reverse)
 
     print(f"Video creation time: {time.time() - time_start:.2f} s")
 
